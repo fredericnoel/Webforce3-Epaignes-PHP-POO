@@ -9,6 +9,9 @@ require_once './classes/Voiture.php';
 // Les propriétés sont définies dans le constructeur
 $voiture1 = new Voiture('Lada', 'Niva', 'moche', 1000);
 
+// Invocation de la méthode pour chancer la couleur
+$voiture1->changerCouleur('encorePlusMoche');
+
 // Regardons comment se comporte notre objet
 var_dump($voiture1);
 
