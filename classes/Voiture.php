@@ -19,7 +19,13 @@ class Voiture
         $this->masse = $mas;
     }
 
-        //Destructeur appelé automatiquement à la fin de l'exécution du script
+    // Méthode pour changer la couleur
+    public function changerCouleur(string $nouvelleCouleur) : void
+    {
+        $this->couleur = $nouvelleCouleur;
+    }
+
+    //Destructeur appelé automatiquement à la fin de l'exécution du script
     public function __destruct()
     {
         echo 'Object destroyed !!!';
