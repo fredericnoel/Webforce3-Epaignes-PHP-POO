@@ -19,6 +19,12 @@ class Voiture
         $this->masse = $mas;
     }
 
+    // Getter pour la masse
+    public function getMasse()
+    {
+        return $this->masse;
+    }
+
     // Méthode pour changer la couleur
     public function changerCouleur(string $nouvelleCouleur) : void
     {
@@ -30,7 +36,7 @@ class Voiture
         $this->vitesse += $variationVitesse;
     }
 
-    //Destructeur appelé automatiquement à la fin de l'exécution du script
+    // Destructeur appelé automatiquement à la fin de l'exécution du script
     public function __destruct()
     {
         echo 'Object destroyed !!!';
