@@ -25,6 +25,11 @@ class Voiture
         return $this->masse;
     }
 
+    public function setMasse(float $nouvelleMasse)
+    {
+        $this->masse = $nouvelleMasse;
+    }
+
     // Méthode pour changer la couleur
     public function changerCouleur(string $nouvelleCouleur) : void
     {
