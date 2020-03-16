@@ -1,13 +1,7 @@
 <?php
 
-class Voiture
+class Voiture extends Vehicule
 {
-    public string $marque; // Le typage des variables possible PHP 7.4
-    public $modele;
-    public $couleur;
-    private $masse;
-    public $vitesse = 0;
-
     // On définit le constructeur
     public function __construct(string $mar, string $mod, string $cou, int $mas)
     {
