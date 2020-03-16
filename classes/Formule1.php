@@ -1,6 +1,6 @@
 <?php
 
-class Formule1 extends Voiture
+final class Formule1 extends Voiture
 {
     private $caracteristique = 'monoplace';
 
