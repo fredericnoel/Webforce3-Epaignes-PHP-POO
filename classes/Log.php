@@ -22,10 +22,10 @@ class Log
         $data = date('H:i:s') . ' - ' . $data;
 
         // Création d'un handler après ouverture fichier
-        $handle = fopen('$path', 'a');
+        $handle = fopen($path, 'a');
 
-        if (flock($handle, LOCK_Ex)) {
-            write($handle, $data . PHP_EOL);
+        if (flock($handle, LOCK_EX)) {
+            fwrite($handle, $data . PHP_EOL);
             flock($handle, LOCK_UN);
         }
         fclose($handle);
