@@ -68,4 +68,16 @@ abstract class Vehicule
     {
         $this->vitesse = $vitesse;
     }
+
+    public function connectionBDD()
+    {
+        try {
+            $pdo = new PDO('mysql:host=localhost;port=3306;dbname=michel', 'root', '');
+            return $pdo;
+        }
+
+        catch (PDOException $e) {
+            Log::logWrite($e->getMessage());
+        }
+    }
 }
