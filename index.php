@@ -15,7 +15,8 @@ $voiture1->changerCouleur('encorePlusMoche');
 // On change la vitesse de la voiture
 $voiture1->changerVitesse(10);
 
-echo $voiture1->masse;
+// On appelle le propriété privée "masse" en passant par son getter
+echo $voiture1->getMasse();
 // Regardons comment se comporte notre objet
 var_dump($voiture1);
 
