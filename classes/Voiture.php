@@ -25,6 +25,11 @@ class Voiture
         $this->couleur = $nouvelleCouleur;
     }
 
+    public function changerVitesse(float $variationVitesse)
+    {
+        $this->vitesse += $variationVitesse;
+    }
+
     //Destructeur appelé automatiquement à la fin de l'exécution du script
     public function __destruct()
     {
