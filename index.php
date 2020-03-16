@@ -1,11 +1,19 @@
 <?php
 
+// Définition du fuseau horaire
 date_default_timezone_set('Europe/Paris');
 
-// On va chercher la classe Voiture
+// Appel de la fonction d'autoload
+require_once './functions/classAutoLoader.php';
+
+// Chargement automatique avec une fonction de la SPL PHP
+spl_autoload_register('classAutoloader');
+
+/* On va chercher la classe Voiture
+L'utilisation de l'autoloader rend les lignes suivantes inutiles
 require_once './classes/Vehicule.php';
 require_once './classes/Voiture.php';
-
+*/
 // Maintenant, je peux instancier un objet avec l'opérateur new
 // Les propriétés sont définies dans le constructeur
 $voiture1 = new Voiture('Lada', 'Niva', 'moche', 1000);
