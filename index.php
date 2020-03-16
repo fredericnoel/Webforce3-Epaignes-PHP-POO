@@ -14,6 +14,13 @@ L'utilisation de l'autoloader rend les lignes suivantes inutiles
 require_once './classes/Vehicule.php';
 require_once './classes/Voiture.php';
 */
+
+// Test de la class Log
+$message = "Corona forever";
+Log::logWrite('test');
+
+
+
 // Maintenant, je peux instancier un objet avec l'opérateur new
 // Les propriétés sont définies dans le constructeur
 $voiture1 = new Voiture('Lada', 'Niva', 'moche', 1000);
@@ -32,4 +39,5 @@ $voiture1->setMasse(950);
 
 // Regardons comment se comporte notre objet
 var_dump($voiture1);
+
 
