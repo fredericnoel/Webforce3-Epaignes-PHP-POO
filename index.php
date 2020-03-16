@@ -19,10 +19,10 @@ require_once './classes/Voiture.php';
 $voiture1 = new Voiture('Lada', 'Niva', 'moche', 1000);
 
 // Invocation de la méthode pour chancer la couleur
-$voiture1->changerCouleur('encorePlusMoche');
+$voiture1->setCouleur('encorePlusMoche');
 
 // On change la vitesse de la voiture
-$voiture1->changerVitesse(10);
+$voiture1->setVitesse(10);
 
 // On appelle le propriété privée "masse" en passant par son getter
 echo $voiture1->getMasse();
