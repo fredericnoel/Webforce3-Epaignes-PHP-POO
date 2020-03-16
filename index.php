@@ -12,6 +12,10 @@ $voiture1 = new Voiture('Lada', 'Niva', 'moche', 1000);
 // Invocation de la méthode pour chancer la couleur
 $voiture1->changerCouleur('encorePlusMoche');
 
+// On change la vitesse de la voiture
+$voiture1->changerVitesse(10);
+
+echo $voiture1->masse;
 // Regardons comment se comporte notre objet
 var_dump($voiture1);
 
